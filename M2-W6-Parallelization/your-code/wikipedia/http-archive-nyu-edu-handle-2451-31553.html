@@ -1,0 +1,352 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Data Science and Prediction : Faculty Digital Archive : NYU Libraries</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="Generator" content="DSpace 5.4" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" href="/static/css/jquery-ui-1.10.3.custom/redmond/jquery-ui-1.10.3.custom.css" type="text/css" />
+        <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="/static/css/bootstrap/dspace-theme.css" type="text/css" />
+
+        <link rel="search" type="application/opensearchdescription+xml" href="/open-search/description.xml" title="DSpace"/>
+
+
+<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<meta name="DC.creator" content="Dhar, Vasant" />
+<meta name="DCTERMS.dateAccepted" content="2012-05-29T20:30:46Z" scheme="DCTERMS.W3CDTF" />
+<meta name="DCTERMS.available" content="2012-05-29T20:30:46Z" scheme="DCTERMS.W3CDTF" />
+<meta name="DCTERMS.issued" content="2012-05-29T20:30:46Z" scheme="DCTERMS.W3CDTF" />
+<meta name="DC.identifier" content="http://hdl.handle.net/2451/31553" scheme="DCTERMS.URI" />
+<meta name="DCTERMS.abstract" content="The world's data is growing more than 40% annually. Coupled with&#xA;exponentially growing computing horsepower, this provides us with&#xA;unprecedented basis for 'learning' useful things from the data through&#xA;statistical induction without material human intervention and acting on&#xA;them. Philosophers have long debated the merits and demerits of&#xA;induction as a scientific method, the latter being that conclusions are&#xA;not guaranteed to be certain and that multiple and numerous models can&#xA;be conjured to explain the observed data. I propose that 'big data'&#xA;brings a new and important perspective to these problems in that it&#xA;greatly ameliorates historical concerns about induction, especially if&#xA;our primary objective is prediction as opposed to causal model&#xA;identification.  Equally significantly, it propels us into an era of&#xA;automated decision making, where computers will make the bulk of&#xA;decisions because it is infeasible or more costly for humans to do so.&#xA;In this paper, I describe how scale, integration and most importantly,&#xA;prediction will be distinguishing hallmarks in this coming era of Data&#xA;Science.'  In this brief monograph, I define this newly emerging field&#xA;from business and research perspectives." xml:lang="en" />
+<meta name="DC.description" content="NYU Stern School of Business, NYU Stern Center for Digital Economy Research" xml:lang="en" />
+<meta name="DC.language" content="en_US" xml:lang="en" scheme="DCTERMS.RFC1766" />
+<meta name="DC.relation" content="CeDER-12-01" />
+<meta name="DC.title" content="Data Science and Prediction" xml:lang="en" />
+<meta name="DC.type" content="Working Paper" xml:lang="en" />
+
+<meta name="citation_author" content="Dhar, Vasant" />
+<meta name="citation_date" content="2012-05-29T20:30:46Z" />
+<meta name="citation_abstract_html_url" content="http://archive.nyu.edu/handle/2451/31553" />
+<meta name="citation_language" content="en_US" />
+<meta name="citation_pdf_url" content="http://archive.nyu.edu/bitstream/2451/31553/2/Dhar-DataScience.pdf" />
+<meta name="citation_keywords" content="Working Paper" />
+<meta name="citation_title" content="Data Science and Prediction" />
+
+
+        
+    <script type='text/javascript' src="/static/js/jquery/jquery-1.10.2.min.js"></script>
+    <script type='text/javascript' src='/static/js/jquery/jquery-ui-1.10.3.custom.min.js'></script>
+    <script type='text/javascript' src='/static/js/bootstrap/bootstrap.min.js'></script>
+    <script type='text/javascript' src='/static/js/holder.js'></script>
+    <script type="text/javascript" src="/utils.js"></script>
+    <script type="text/javascript" src="/static/js/choice-support.js"> </script>
+
+    
+    
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-37717358-4']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    
+    
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="/static/js/html5shiv.js"></script>
+  <script src="/static/js/respond.min.js"></script>
+<![endif]-->
+  
+    </head>
+    
+    
+    <body>
+<a id="skip-nav" href="#content">Skip navigation</a>
+<header class="navbar navbar-inverse">    
+    
+            <div class="container">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="navbar-header">
+			<button aria-label="Toggle Menu" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			<a class="navbar-brand" href="/"><img height="35" width="432" src="/image/nyu_fda_logo.png" alt="FDA" /> </a> </div>
+			<nav class="collapse navbar-collapse bs-navbar-collapse" >
+			<div class="nav navbar-nav navbar-right">
+				<ul class="nav navbar-nav navbar-right">
+
+					<li class="dropdown"> <a href="/jspui" class="dropdown-toggle" data-toggle="dropdown">Browse <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="/community-list">Communities<br/>
+								&amp;&nbsp;Collections</a></li>
+							<li class="divider"></li>
+							 <li class="dropdown-header">Browse Items by:</li>
+																
+																
+																
+																												<li><a href="/browse?type=dateissued">Issue Date</a></li>
+																				
+																												<li><a href="/browse?type=author">Author</a></li>
+																				
+																												<li><a href="/browse?type=title">Title</a></li>
+																				
+																												<li><a href="/browse?type=subject">Subject</a></li>
+																				
+																		
+																
+
+						</ul>
+					</li>
+					<li class=""><a href="/advanced-search">Search</a></li>
+				
+					<li class="dropdown">
+				 
+						 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Sign on to: <b class="caret"></b></a>
+				             
+						 <ul class="dropdown-menu">
+							 <li><a href="/mydspace">My FDA</a></li>
+							 <li><a href="/subscribe">Receive email<br/>updates</a></li>
+							 <li><a href="/profile">Edit Profile</a></li>
+
+								
+						 </ul>
+					 </li>
+ 
+				</ul>
+
+			</div>
+		</nav>
+
+            </div>
+
+<script type="text/javascript">
+  var jQ = jQuery.noConflict();
+  jQ(document).ready(function() {
+      jQ(".fda-tree li").each(function( index ) {
+        if (jQ( this ).find( "ul" ).length ){
+           jQ( this ).addClass("has-sublist");
+          jQ( this ).find( "ul" ).hide();
+          var ArrowElement = jQ( '<a class="arrow" href="#">+</a>');
+          jQ( this ).prepend( ArrowElement );
+          ArrowElement.click(function(event){
+            event.preventDefault();
+            openstate = jQ(this ).siblings( "ul" ).is(":visible");
+            if (!openstate) {
+              jQ( this ).text("-");
+              jQ( this ).addClass("isOpen");
+              jQ( this ).siblings( "ul" ).slideDown("fast", function(){});
+            } else {
+               jQ( this ).removeClass("isOpen");
+              jQ( this ).siblings( "ul" ).slideUp("fast");
+              jQ( this ).text("+");
+            }
+          });
+        } 
+    });
+  });
+  </script>
+</header>
+<main id="content" tabindex="-1">
+<!--<div class="container">
+    <div class="alert alert-warning" role="alert">
+              <p>The NYU IT team is performing scheduled maintenance on the storage device that supports the Faculty Digital Archive on Wednesday, November 6th starting at 9:30am EST and continuing though Thursday November 7th. Contents will be available for viewing during this time. However, submitters will not be able to submit or edit items until this maintenance is complete. We apologize for this inconvenience.
+        </p></div>
+</div>-->
+
+<div class="container">
+                
+
+
+
+  
+
+<ol class="breadcrumb">
+
+  <li><a href="/">Faculty Digital Archive : NYU Libraries</a></li>
+
+  <li><a href="/community-list">Communities & Collections</a></li>
+
+  <li><a href="/handle/2451/14088">Stern School of Business</a></li>
+
+  <li><a href="/handle/2451/14813">CeDER Working Papers</a></li>
+
+<li>Data Science and Prediction</li>
+
+</ol>
+
+</div>                
+
+
+
+
+
+        
+<div class="container">
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+		
+
+        <!--<div class="alert alert-warning citation-info">
+        Please use this identifier to cite or link to this item:
+            <code>http://hdl.handle.net/2451/31553</code>
+        </div>-->
+
+
+		<!-- side bar --> 
+
+
+
+
+  <!-- Here's the item itself -->
+    <section class="fda-individual-item">
+    
+    <table class="table itemDisplayTable">
+<tr class="item-title "><td class="metadataFieldLabel">Title:&nbsp;</td><td class="metadataFieldValue"><h1 class="page-title">Data&#x20;Science&#x20;and&#x20;Prediction</td></tr>
+<tr><td class="metadataFieldLabel">Authors:&nbsp;</td><td class="metadataFieldValue"><a class="author"href="/browse?type=author&amp;value=Dhar%2C+Vasant">Dhar,&#x20;Vasant</a></td></tr>
+<tr><td class="metadataFieldLabel">Issue Date:&nbsp;</td><td class="metadataFieldValue">29-May-2012</td></tr>
+<tr><td class="metadataFieldLabel">Series/Report no.:&nbsp;</td><td class="metadataFieldValue">CeDER-12-01</td></tr>
+<tr><td class="metadataFieldLabel">Abstract:&nbsp;</td><td class="metadataFieldValue">The&#x20;world&#39;s&#x20;data&#x20;is&#x20;growing&#x20;more&#x20;than&#x20;40%&#x20;annually.&#x20;Coupled&#x20;with&#x0A;exponentially&#x20;growing&#x20;computing&#x20;horsepower,&#x20;this&#x20;provides&#x20;us&#x20;with&#x0A;unprecedented&#x20;basis&#x20;for&#x20;&#39;learning&#39;&#x20;useful&#x20;things&#x20;from&#x20;the&#x20;data&#x20;through&#x0A;statistical&#x20;induction&#x20;without&#x20;material&#x20;human&#x20;intervention&#x20;and&#x20;acting&#x20;on&#x0A;them.&#x20;Philosophers&#x20;have&#x20;long&#x20;debated&#x20;the&#x20;merits&#x20;and&#x20;demerits&#x20;of&#x0A;induction&#x20;as&#x20;a&#x20;scientific&#x20;method,&#x20;the&#x20;latter&#x20;being&#x20;that&#x20;conclusions&#x20;are&#x0A;not&#x20;guaranteed&#x20;to&#x20;be&#x20;certain&#x20;and&#x20;that&#x20;multiple&#x20;and&#x20;numerous&#x20;models&#x20;can&#x0A;be&#x20;conjured&#x20;to&#x20;explain&#x20;the&#x20;observed&#x20;data.&#x20;I&#x20;propose&#x20;that&#x20;&#39;big&#x20;data&#39;&#x0A;brings&#x20;a&#x20;new&#x20;and&#x20;important&#x20;perspective&#x20;to&#x20;these&#x20;problems&#x20;in&#x20;that&#x20;it&#x0A;greatly&#x20;ameliorates&#x20;historical&#x20;concerns&#x20;about&#x20;induction,&#x20;especially&#x20;if&#x0A;our&#x20;primary&#x20;objective&#x20;is&#x20;prediction&#x20;as&#x20;opposed&#x20;to&#x20;causal&#x20;model&#x0A;identification.&#x20;&#x20;Equally&#x20;significantly,&#x20;it&#x20;propels&#x20;us&#x20;into&#x20;an&#x20;era&#x20;of&#x0A;automated&#x20;decision&#x20;making,&#x20;where&#x20;computers&#x20;will&#x20;make&#x20;the&#x20;bulk&#x20;of&#x0A;decisions&#x20;because&#x20;it&#x20;is&#x20;infeasible&#x20;or&#x20;more&#x20;costly&#x20;for&#x20;humans&#x20;to&#x20;do&#x20;so.&#x0A;In&#x20;this&#x20;paper,&#x20;I&#x20;describe&#x20;how&#x20;scale,&#x20;integration&#x20;and&#x20;most&#x20;importantly,&#x0A;prediction&#x20;will&#x20;be&#x20;distinguishing&#x20;hallmarks&#x20;in&#x20;this&#x20;coming&#x20;era&#x20;of&#x20;Data&#x0A;Science.&#39;&#x20;&#x20;In&#x20;this&#x20;brief&#x20;monograph,&#x20;I&#x20;define&#x20;this&#x20;newly&#x20;emerging&#x20;field&#x0A;from&#x20;business&#x20;and&#x20;research&#x20;perspectives.</td></tr>
+<tr><td class="metadataFieldLabel">URI:&nbsp;</td><td class="metadataFieldValue"><a href="http://hdl.handle.net/2451/31553">http:&#x2F;&#x2F;hdl.handle.net&#x2F;2451&#x2F;31553</a></td></tr>
+<tr><td class="metadataFieldLabel">Appears in Collections:</td><td class="metadataFieldValue"><a href="/handle/2451/14813">CeDER Working Papers</a><br/></td></tr>
+</table><br/>
+<div class="panel panel-info"><div class="panel-heading">Files in This Item:</div>
+<table class="table panel-body"><tr><th id="t1" class="standard">File</th>
+<th id="t2" class="standard">Description</th>
+<th id="t3" class="standard">Size</th><th id="t4" class="standard">Format</th><th>&nbsp;</th></tr>
+<tr><td headers="t1" class="standard"><a target="_blank" href="/bitstream/2451/31553/2/Dhar-DataScience.pdf">Dhar-DataScience.pdf</a></td><td headers="t2" class="standard"></td><td headers="t3" class="standard">443.79 kB</td><td headers="t4" class="standard">Adobe PDF</td><td class="standard" align="center"><a class="btn btn-primary" target="_blank" href="/bitstream/2451/31553/2/Dhar-DataScience.pdf">View/Open</a></td></tr></table>
+</div>
+
+
+   
+    <!-- show full item record button -->
+
+
+
+<div class="container row">
+
+
+    <a class="btn btn-default" href="/handle/2451/31553?mode=full">
+        Show full item record
+    </a>
+
+    <a aria-label ="View statistics for this item" class="statisticsLink  btn btn-primary" href="/handle/2451/31553/statistics"><span class="glyphicon glyphicon-stats"></span></a>
+
+    
+
+</div>
+
+</section>
+<br >
+    
+
+<br/>
+    
+
+    <p class="submitFormHelp">Items in FDA are protected by copyright, with all rights reserved, unless otherwise indicated.</p>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+</div>
+</main>
+            
+<footer class="navbar navbar-inverse">
+    <div class="footer-holder container">
+    <div class="f-1"><a href="/about">About the Archive</a> | <a target="_blank" href="/help">Help</a> | <a href="/contact">Contact</a> | <a href="/about#rights">Rights</a> | <a href="https://www.nyu.edu/footer/accessibility.html" class="ext" target="_blank">Accessibility <span class="glyphicon glyphicon-new-window"></span></a></div>
+    <div class="f-2">Powered by <a target="_blank" href="http://dlib.nyu.edu/dlts">NYU DLTS</a> and <a target="_blank" href="http://www.dspace.org">DSpace</a> </div>
+    </div>
+</footer>
+
+    </body>
+</html>
